@@ -1,0 +1,8 @@
+<h2> Menu </h2>
+<ul>
+  {% for choice, description in services.items %}
+  <li>
+    <a href="/get_ticket/{{ choice }}">{{ description }}</a>
+  </li>
+  {% endfor %}
+</ul>
